@@ -91,7 +91,7 @@ def gitEnvVars() {
 
 def containerBuildPub(Map args) {
 
-    println "Running Docker build/publish: ${args.host}/${args.acct}/${args.repo}:${args.tags}"
+    println "Running Docker build/publish: ${args.acct}/${args.repo}:${args.tags}"
 
     docker.withRegistry("https://${args.host}", "${args.auth_id}") {
 
