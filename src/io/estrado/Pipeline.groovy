@@ -104,6 +104,7 @@ def containerBuildPub(Map args) {
         }
 
         return img.id
+        println img.id
     }
 }
 
